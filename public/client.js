@@ -1,11 +1,9 @@
-console.log('Client-side code running');
-
-const button = document.getElementById('myButton');
+const button = document.getElementById('pledge');
 
 button.addEventListener('click', function(e) {
 
   console.log('button was clicked');
-  button.classList.add("loading", "disabled");
+  button.classList.add("_disabled");
 
   fetch('/clicked', {method: 'POST'})
     .then(function(response) {
@@ -18,14 +16,12 @@ button.addEventListener('click', function(e) {
     .catch(function(error) {
       console.log(error);
     });
-    button.classList.remove("loading", "disabled");
+    button.classList.remove("_disabled");
 });
-
-// animateValue(0, `${data.length}`);
 
 setInterval(function() {
     updateVal();
-}, 5000);
+}, 2000);
 
 function updateVal(anim = false){
     fetch('/clicks', {method: 'GET'})

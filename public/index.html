@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.8/spectre.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <style>
-        .p1015{
-            padding: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-            height: auto;
-        }
-    </style>
-  </head>
-  <body class="text-center" onload="updateVal(true)" style="font-family:'poppins';">
-        <div style="top: 0;z-index: 100;position: absolute;width: 100%;background-color: #fff;">
-            <h2 style="padding-top: 10px;"><b>Name</b></h2>
-        </div>  
-    <div class="hero hero-lg bg-primary" style="height: -webkit-fill-available;">
-        <div class="hero-body">
-            <h2>Pledge</h2>
-            <h1 id="counter" class="counter text-bold"></h1>
-            <button id="myButton" class="btn p1015">I Support</button>
-        </div>
-    </div>
-    <div class="empty" style="bottom: 0;z-index: 100;position: absolute;width: 100%;background-color: #fff;">
-        <p class="empty-title h5">Some text</p>
-        <p class="empty-subtitle">some more text</p>
-    </div>
-  </body>
-  <script src="client.js"></script>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" type="text/css" href="https://rawgit.com/outboxcraft/beauter/master/beauter.min.css"/>
+	</head>
+	<body onload="updateVal(true)">
+		<ul class="topnav -fixed" style="background:#00f">
+			<li><a class="brand" href="http://beauter.outboxcraft.com/">Name</a></li>
+		</ul>
+		<div style=" margin-top:55px;background: white; background: linear-gradient(blue, white); ">
+			<div class="container _force-full-width jumbo _alignCenter">
+				<div class="container jumbo _round ">
+					<h3>Pledge</h3>
+					<h1 id="counter" class="counter" style="font-weight: bold;">0</h1>
+					<a id="pledge" class="button _info _round _large" href="#">Pledge Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col m6">
+					<h3 class="m">Lorem ipsum dolor sit amet</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col m6">
+					<h3 class="m">Lorem ipsum dolor sit amet</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col m6">
+					<h3 class="m">Lorem ipsum dolor sit amet</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col m6">
+					<h3 class="m">Lorem ipsum dolor sit amet</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+    <script src="client.js"></script>
 </html>
